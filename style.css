@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* overflow-y: hidden; */
+    background-color: rgb(240, 244, 248);
+}
+
+#main{
+    margin-top: 100px;
+    width: 40%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    box-shadow: -2px 10px  15px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+}
+
+#register-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    /* border: 1px solid black; */
+}
+
+#password-inp, #email-inp ,#submit-btn{
+    height: 40px;
+    padding: 5px;
+    width: 300px;
+    border: 1px solid rgb(0, 85, 255)   ;
+    /* width: 10%; */
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.1em;
+}
+#submit-btn{
+    margin-top: 30px;
+    width: 110px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(0, 85, 255);
+    color: white;
+}
+p{
+    margin: 2px;
+    color: rgb(197, 0, 0);
+    display: none;
+}
+#btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#success{
+    color: rgb(0, 161, 0);
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #main{
+        width: 70%;
+        height: auto;
+        padding: 30px 0;
+        gap: 40px;
+    }
+
+    #password-inp, #email-inp{
+        width: 260px;
+    }
+}
+
+@media (max-width: 425px) {
+    #main{
+        width: 90%;
+        margin-top: 60px;
+        gap: 30px;
+    }
+
+    #password-inp, #email-inp{
+        width: 240px;
+        font-size: 1rem;
+    }
+
+    #submit-btn{
+        width: 120px;
+    }
+}
+
+@media (max-width: 375px) {
+    #main{
+        width: 92%;
+        margin-top: 40px;
+        gap: 25px;
+        padding: 20px 0;
+    }
+
+    #password-inp, #email-inp{
+        width: 220px;
+        font-size: 0.95rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #main{
+        width: 95%;
+        margin-top: 60px;
+        gap: 20px;
+    }
+
+    #password-inp, #email-inp{
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+    #submit-btn{
+        width: 100px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    h1{
+        font-size: 1.3rem;
+    }
+}

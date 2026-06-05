@@ -58,6 +58,5 @@ passInput.addEventListener("input", hideError);
 
 registerForm.addEventListener("submit", (e)=>{
     e.preventDefault();
-    console.log("form stopped reload")
     createUser()
 })
